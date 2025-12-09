@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>8 Wonders of the World</title>
+    <meta name="author" content="Erl Emard Viloria"
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore the 8 Wonders of the World through interactive galleries and history. Discover the Great Wall, Petra, Machu Picchu, and more in this curated digital experience by Fin.">
+     <meta name="keywords" content="8 Wonders of the World, Great Wall of China, Petra, Colosseum, Machu Picchu, Taj Mahal, Chichen Itza, Christ the Redeemer, Great Pyramid of Giza, Travel, History, Fin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Wonders of the World</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <div class="overlay-header">
+        
+        <div class="logo-box">
+            <img src="images/logo.jpg" alt="Logo" class="logo-img">
+        </div>
+
+        <div class="menu-btn-custom" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+    </div>
+    <header>
+        <div class="header-title">
+            <h1>The 8 Wonders of the World</h1>
+        </div>
+
+        <nav id="glass-nav">
+            <a href="index.html">Home</a>
+            <a href="#wonders">The Wonders</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <section id="wonders">
+            <h2>Explore the Landmarks</h2>
+            <p style="text-align: center; margin-bottom: 20px; color: #666;">Click on a card to see details and photos.</p>
+            
+            <div class="wonders-grid">
+    
+                <div class="wonder-card" onclick="openModal('china')">
+                    <img src="images/wallofchina.jpg" alt="Great Wall" class="card-img">
+                    <div class="wonder-info">
+                        <h3>Great Wall of China</h3>
+                        <p>An architectural marvel that spans over 21,000 kilometers, originally built by Emperor Qin Shi Huang and expanded by the Ming Dynasty.</p>
+                    </div>
+                </div>
+
+                <div class="wonder-card" onclick="openModal('petra')">
+                    <img src="images/Petra.jpg" alt="Petra" class="card-img">
+                    <div class="wonder-info">
+                        <h3>Petra, Jordan</h3>
+                        <p>Often called the 'Lost City' because it remained unknown to the Western world until 1812, it is now famous for its Treasury building which appeared in the movie Indiana Jones and the Last Crusade.</p>
+                    </div>
+                </div>
+
+                <div class="wonder-card" onclick="openModal('colosseum')">
+                    <img src="images/colesseum.jpg" alt="Colosseum" class="card-img">
+                    <div class="wonder-info">
+                        <h3>The Colosseum, Italy</h3>
+                        <p>"Located in the center of Rome, this oval amphitheater could hold up to 80,000 spectators. It was used for gladiatorial contests, public spectacles, and dramas based on Classical mythology.</p>
+                    </div>
+                </div>
+
+                <div class="wonder-card" onclick="openModal('chichen')">
+                    <img src="images/chichen.jpg" alt="Chichen Itza" class="card-img">
+                    <div class="wonder-info">
+                        <h3>Chichen Itza, Mexico</h3>
+                        <p>"Located in the center of Rome, this oval amphitheater could hold up to 80,000 spectators. It was used for gladiatorial contests, public spectacles, and dramas based on Classical mythology.</p>
+                    </div>
+                </div>
+
+                <div class="wonder-card" onclick="openModal('machu')">
+                    <img src="images/MachuPicchu.jpg" alt="Machu Picchu" class="card-img">
+                    <div class="wonder-info">
+                        <h3>Machu Picchu, Peru</h3>
+                        <p>Built in the 15th century and later abandoned, this site sits on a mountain ridge 2,430 meters above sea level. It is renowned for its sophisticated dry-stone walls that fuse huge blocks without mortar.</p>
+                    </div>
+                </div>
+
+                <div class="wonder-card" onclick="openModal('taj')">
+                    <img src="images/TajMahal.jpg" alt="Taj Mahal" class="card-img">
+                    <div class="wonder-info">
+                        <h3>Taj Mahal, India</h3>
+                        <p>A masterpiece of Mughal architecture, it includes a mosque, a guest house, and formal gardens. The white marble changes color depending on the time of day-pinkish in the morning, milky white in the evening, and golden at night.</p>
+                    </div>
+                </div>
+
+                <div class="wonder-card" onclick="openModal('christ')">
+                    <img src="images/Christ.jpg" alt="Christ the Redeemer" class="card-img">
+                    <div class="wonder-info">
+                        <h3>Christ the Redeemer, Brazil</h3>
+                        <p>Standing 30 meters tall, its open arms symbolize peace and welcome. It overlooks the entire city of Rio and is considered a cultural icon of both Brazil and Christianity.</p>
+                    </div>
+                </div>
+
+                <div class="wonder-card" onclick="openModal('giza')">
+                    <img src="images/giza.jpg" alt="Great Pyramid" class="card-img">
+                    <div class="wonder-info">
+                        <h3>Great Pyramid of Giza</h3>
+                        <p>Built as a tomb for the Pharaoh Khufu, it stood as the tallest man-made structure in the world for over 3,800 years. It consists of an estimated 2.3 million blocks of stone.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+    <div class="about-container">
+        <h2>About Fin</h2>
+        <p class="tagline">Bridging the gap between history and the digital world.</p>
+        
+        <p class="about-text">
+            <strong>Fin</strong> is a digital showcase dedicated to preserving the legacy of human achievement. 
+            We believe that the 8 Wonders of the World are not just ancient stones, but living stories 
+            that deserve to be experienced by everyone, everywhere.
+        </p>
+        
+        <p class="about-text">
+            Through immersive design and curated storytelling, Fin aims to transport users across continents 
+            and centuries, offering a modern window into the past.
+        </p>
+    </div>
+</section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <form action="response.html">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <div id="wonder-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            
+            <div class="slider-container" id="slider-container">
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+
+            <div class="modal-text">
+                <h2 id="modal-title">Title</h2>
+                <p id="modal-desc">Description goes here.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Wonders of the World.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
