@@ -306,7 +306,7 @@ footer {
     margin: 5% auto; 
     padding: 0;
     border-radius: 10px;
-    width: 80%; /* Desktop default */
+    width: 80%; 
     max-width: 800px;
     position: relative;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -334,7 +334,6 @@ footer {
     padding: 20px;
 }
 
-/* --- SLIDER STYLES --- */
 
 .slider-container {
     position: relative;
@@ -343,17 +342,14 @@ footer {
     background: #000;
 }
 
-/* FIX: MOBILE RESPONSIVE SETTINGS */
 @media (max-width: 768px) {
-    /* 1. Expand the box to 95% of the screen width */
     .modal-content {
         width: 95%;
         margin: 20% auto;
     }
 
-    /* 2. Increase the height frame so the image fits nicely without being tiny */
     .slider-container {
-        height: 50vh; /* 50% of screen height */
+        height: 50vh;
     }
 }
 
@@ -364,7 +360,6 @@ footer {
     animation: fadeEffect 1.5s; 
 }
 
-/* FIX: Use 'contain' so the full image is always visible */
 .slide img {
     width: 100%;
     height: 100%;
